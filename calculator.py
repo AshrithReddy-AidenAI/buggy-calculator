@@ -11,5 +11,5 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    # BUG: integer division instead of true division
+    # performs true division
     return a / b

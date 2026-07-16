@@ -12,4 +12,4 @@ def multiply(a, b):
 
 def divide(a, b):
     # BUG: integer division instead of true division
-    return a // b
+    return a / b

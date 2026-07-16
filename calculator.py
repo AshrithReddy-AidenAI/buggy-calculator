@@ -11,5 +11,5 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    # performs true division
+    # performs true division; use / (true division) not // (integer division)
     return a / b

@@ -3,16 +3,16 @@ def add(a, b):
 
 
 def subtract(a, b):
-    return b - a
+    return a - b
 
 
 def multiply(a, b):
-    return a + b
+    return a * b
 
 
 def divide(a, b):
     # BUG: integer division instead of true division
-    return a // b
+    return a / b
 
 
 def power(base, exponent):

@@ -1,23 +1,26 @@
-def add(a, b):
-    return a + b
+"""Backwards-compatible entry point; real implementation lives in app/core/operations.py."""
+from app.core.operations import (
+    add,
+    subtract,
+    multiply,
+    divide,
+    power,
+    average,
+    factorial,
+    is_prime,
+    square_root,
+    percentage,
+)
 
-
-def subtract(a, b):
-    return b - a
-
-
-def multiply(a, b):
-    return a + b
-
-
-def divide(a, b):
-    # BUG: integer division instead of true division
-    return a // b
-
-
-def power(base, exponent):
-    return base * exponent
-
-
-def average(numbers):
-    return sum(numbers) // len(numbers)
+__all__ = [
+    "add",
+    "subtract",
+    "multiply",
+    "divide",
+    "power",
+    "average",
+    "factorial",
+    "is_prime",
+    "square_root",
+    "percentage",
+]
